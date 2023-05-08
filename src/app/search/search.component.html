@@ -1,0 +1,17 @@
+<app-container [count]="CountInputOnly"></app-container>
+
+<div [appBetterhightlight]="B_Color">
+  <button (click)="incrementInputOnly()">
+    Increment Count Input in Parent
+  </button>
+  <button (click)="decreaseInput()">Decrement Count in Parent</button>
+
+  <app-demo [(Count)]="CountWithDemo"></app-demo>
+
+  <button (click)="CountwithDemoEvent()">
+    Increment Count with Demo event in Parent
+  </button>
+  <button (click)="DecreasewithDemoEvent()">
+    Decrement Count with Demo event in Parent
+  </button>
+</div>
